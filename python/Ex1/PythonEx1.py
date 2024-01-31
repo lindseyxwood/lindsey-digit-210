@@ -6,3 +6,7 @@ recipe = open('wood-claudeAI-recipe.txt', 'r')
 text = recipe.read()
 textstring = str(text)
 print(textstring)
+
+recipeWords = nlp(textstring)
+for token in recipeWords:
+    print(token.text, token.lemma_, token.pos_)
