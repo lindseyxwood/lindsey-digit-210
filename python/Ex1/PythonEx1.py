@@ -9,4 +9,4 @@ print(textstring)
 
 recipeWords = nlp(textstring)
 for token in recipeWords:
-    print(token.text, token.lemma_, token.pos_)
+    print(token.lemma_, 'potato', token.pos_, 'meow')
